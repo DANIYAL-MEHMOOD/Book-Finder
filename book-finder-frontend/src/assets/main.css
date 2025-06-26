@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+/* Global Dark Mode Styles */
+html.dark {
+    --tw-bg-opacity: 1;
+    background-color: rgba(17, 24, 39, var(--tw-bg-opacity)); /* dark:bg-gray-900 */
+    color: whitesmoke;
+    /* //color: rgba(209, 213, 219, var(--tw-text-opacity)); dark:text-gray-200 */
+  }
+  

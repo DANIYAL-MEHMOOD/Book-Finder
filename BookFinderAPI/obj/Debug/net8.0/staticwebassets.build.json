@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "H6iDuCHPccK1oAtTRKK5By6T1COE/LkpZPqnTf+ovFQ=",
+  "Source": "BookFinderAPI",
+  "BasePath": "_content/BookFinderAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
