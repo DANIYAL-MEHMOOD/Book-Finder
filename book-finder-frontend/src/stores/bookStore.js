@@ -12,7 +12,7 @@ export const useBookStore = defineStore("bookStore", () => {
   // Fetch books
   const fetchBooks = async () => {
     try {
-      const response = await axios.get("https://localhost:44331/api/books");
+      const response = await axios.get(`${import.meta.env.VITE_API_URL}/api/books`);
       books.value = response.data;
     } catch (error) {
       console.error("Error fetching books:", error);
@@ -23,7 +23,7 @@ export const useBookStore = defineStore("bookStore", () => {
   const fetchFavorites = async () => {
     if (!token) return;
     try {
-      const response = await axios.get("https://localhost:44331/api/favorites", {
+      const response = await axios.get(`${import.meta.env.VITE_API_URL}/api/favorites`, {
         headers: { Authorization: `Bearer ${token}` },
       });
       favoriteBooks.value = response.data.map((fav) => fav.book.id);
@@ -43,13 +43,13 @@ export const useBookStore = defineStore("bookStore", () => {
     try {
       if (isFavorite) {
         // Find the favorite item to remove
-        const favItem = (await axios.get("https://localhost:44331/api/favorites", {
+        const favItem = (await axios.get(`${import.meta.env.VITE_API_URL}/api/favorites`, {
           headers: { Authorization: `Bearer ${token}` },
         })).data.find((fav) => fav.book.id === bookId);
 
         if (!favItem) return;
 
-        await axios.delete(`https://localhost:44331/api/favorites/${favItem.id}`, {
+        await axios.delete(`${import.meta.env.VITE_API_URL}/api/favorites/${favItem.id}`, {
           headers: { Authorization: `Bearer ${token}` },
         });
 
@@ -59,7 +59,7 @@ export const useBookStore = defineStore("bookStore", () => {
       } else {
         // Add to favorites
         const response = await axios.post(
-          "https://localhost:44331/api/favorites",
+          `${import.meta.env.VITE_API_URL}/api/favorites`,
           bookId,
           {
             headers: {
