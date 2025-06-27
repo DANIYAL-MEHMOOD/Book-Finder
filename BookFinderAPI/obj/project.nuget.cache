@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "mJcKmb29OMM=",
+  "dgSpecHash": "xxzWA1kHDzo=",
   "success": true,
-  "projectFilePath": "E:\\2.learning\\Book Finder\\Book Finder\\BookFinderAPI\\BookFinderAPI.csproj",
+  "projectFilePath": "E:\\2.learning\\Book Finder\\FOR GITHUB\\Book-Finder\\BookFinderAPI\\BookFinderAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\danim\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\danim\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\2.learning\\Book Finder\\Book Finder\\BookFinderAPI\\BookFinderAPI.csproj": {}
+    "E:\\2.learning\\Book Finder\\FOR GITHUB\\Book-Finder\\BookFinderAPI\\BookFinderAPI.csproj": {}
   },
   "projects": {
-    "E:\\2.learning\\Book Finder\\Book Finder\\BookFinderAPI\\BookFinderAPI.csproj": {
+    "E:\\2.learning\\Book Finder\\FOR GITHUB\\Book-Finder\\BookFinderAPI\\BookFinderAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\2.learning\\Book Finder\\Book Finder\\BookFinderAPI\\BookFinderAPI.csproj",
+        "projectUniqueName": "E:\\2.learning\\Book Finder\\FOR GITHUB\\Book-Finder\\BookFinderAPI\\BookFinderAPI.csproj",
         "projectName": "BookFinderAPI",
-        "projectPath": "E:\\2.learning\\Book Finder\\Book Finder\\BookFinderAPI\\BookFinderAPI.csproj",
+        "projectPath": "E:\\2.learning\\Book Finder\\FOR GITHUB\\Book-Finder\\BookFinderAPI\\BookFinderAPI.csproj",
         "packagesPath": "C:\\Users\\danim\\.nuget\\packages\\",
-        "outputPath": "E:\\2.learning\\Book Finder\\Book Finder\\BookFinderAPI\\obj\\",
+        "outputPath": "E:\\2.learning\\Book Finder\\FOR GITHUB\\Book-Finder\\BookFinderAPI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\danim\\AppData\\Roaming\\NuGet\\NuGet.Config",
