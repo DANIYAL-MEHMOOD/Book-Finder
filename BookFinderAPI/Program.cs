@@ -46,17 +46,27 @@ builder.Services.AddSwaggerGen(c =>
     });
 });
 // Add CORS Policy
+// builder.Services.AddCors(options =>
+// {
+//     options.AddPolicy("AllowAll",
+//         policy =>
+//         {
+//             policy.AllowAnyOrigin()
+//                   .AllowAnyMethod()
+//                   .AllowAnyHeader();
+//         });
+// });
+// Add CORS policy
 builder.Services.AddCors(options =>
 {
-    options.AddPolicy("AllowAll",
+    options.AddPolicy("AllowFrontend",
         policy =>
         {
-            policy.AllowAnyOrigin()
-                  .AllowAnyMethod()
-                  .AllowAnyHeader();
+            policy.WithOrigins("http://localhost:3000")
+                  .AllowAnyHeader()
+                  .AllowAnyMethod();
         });
 });
-
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
  
@@ -96,8 +106,9 @@ if (app.Environment.IsDevelopment())
     });
 }
 
-app.UseCors("AllowAll");
-app.UseHttpsRedirection();
+//app.UseCors("AllowAll");
+app.UseCors("AllowFrontend");
+//app.UseHttpsRedirection();
 app.UseAuthentication();
 app.UseAuthorization();
  
